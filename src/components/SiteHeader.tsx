@@ -36,6 +36,9 @@ export default function SiteHeader() {
         <Link to="/roadmap" className="transition-colors duration-200 hover:text-cyan-300">
           Roadmap
         </Link>
+        <Link to="/docs" className="transition-colors duration-200 hover:text-cyan-300">
+          Docs
+        </Link>
       </nav>
     </header>
   );

@@ -1,0 +1,9 @@
+[
+  { "title": "Overview", "path": "index.md" },
+  { "title": "Core", "path": "core/README.md" },
+  { "title": "Supervisor", "path": "supervisor/README.md" },
+  { "title": "Nodes", "path": "nodes/README.md" },
+  { "title": "MQTT", "path": "mqtt/README.md" },
+  { "title": "Workers", "path": "workers/README.md" },
+  { "title": "Addons", "path": "addons/README.md" }
+]
