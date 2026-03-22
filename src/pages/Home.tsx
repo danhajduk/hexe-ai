@@ -54,13 +54,22 @@ export default function Home() {
 
       <div className="relative mx-auto max-w-7xl px-6 py-10">
         <header className="mb-12 flex items-center justify-between rounded-2xl border border-white/10 bg-white/5 px-6 py-4 backdrop-blur-xl">
-          <div>
-            <div className="text-xs uppercase tracking-[0.3em] text-cyan-300">
-              Hexe AI
-            </div>
-            <div className="text-lg font-semibold">Control Plane Platform</div>
-          </div>
+          <div className="flex items-center gap-3">
+            <img
+              src="/favicon.svg"
+              alt="Hexe AI"
+              className="w-12 h-15 rounded-md"
+            />
 
+            <div>
+              <div className="text-xs uppercase tracking-[0.3em] text-cyan-300">
+                Hexe AI
+              </div>
+              <div className="text-lg font-semibold">
+                Control Plane Platform
+              </div>
+            </div>
+          </div>
           <nav className="hidden gap-6 text-sm text-slate-300 md:flex">
             <a href="/" className="transition hover:text-white">
               Concept
