@@ -1,3 +1,5 @@
+import SiteHeader from "../components/SiteHeader";
+
 const layers = [
   {
     title: "Core",
@@ -30,30 +32,7 @@ export default function System() {
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(56,189,248,0.12),transparent_30%),radial-gradient(circle_at_top_right,rgba(168,85,247,0.12),transparent_30%)]" />
 
       <div className="relative mx-auto max-w-7xl px-6 py-10">
-        <header className="mb-12 flex items-center justify-between rounded-2xl border border-white/10 bg-white/5 px-6 py-4 backdrop-blur-xl">
-          <div>
-            <div className="text-xs uppercase tracking-[0.3em] text-cyan-300">
-              Hexe AI
-            </div>
-            <div className="text-lg font-semibold">System Architecture</div>
-          </div>
-
-          <nav className="hidden gap-6 text-sm text-slate-300 md:flex">
-            <a href="/" className="transition hover:text-white">
-              Concept
-            </a>
-            <a href="/system" className="transition hover:text-white">
-              System
-            </a>
-            <a href="/status" className="transition hover:text-white">
-              Status
-            </a>
-            <a href="/roadmap" className="transition hover:text-white">
-              Roadmap
-            </a>
-          </nav>
-        </header>
-
+        <SiteHeader />
         <section className="mb-16">
           <h1 className="max-w-4xl text-4xl font-semibold leading-tight sm:text-5xl">
             A layered platform with clear authority and execution boundaries.

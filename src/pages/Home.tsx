@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
+import SiteHeader from "../components/SiteHeader";
 
 type SectionKey = "hero" | "idea" | "works" | "matters";
 
@@ -53,39 +54,7 @@ export default function Home() {
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(56,189,248,0.15),transparent_30%),radial-gradient(circle_at_top_right,rgba(168,85,247,0.15),transparent_30%)]" />
 
       <div className="relative mx-auto max-w-7xl px-6 py-10">
-        <header className="mb-12 flex items-center justify-between rounded-2xl border border-white/10 bg-white/5 px-6 py-4 backdrop-blur-xl">
-          <div className="flex items-center gap-3">
-            <img
-              src="/favicon.svg"
-              alt="Hexe AI"
-              className="w-12 h-15 rounded-md"
-            />
-
-            <div>
-              <div className="text-xs uppercase tracking-[0.3em] text-cyan-300">
-                Hexe AI
-              </div>
-              <div className="text-lg font-semibold">
-                Control Plane Platform
-              </div>
-            </div>
-          </div>
-          <nav className="hidden gap-6 text-sm text-slate-300 md:flex">
-            <a href="/" className="transition hover:text-white">
-              Concept
-            </a>
-            <a href="/system" className="transition hover:text-white">
-              System
-            </a>
-            <a href="/status" className="transition hover:text-white">
-              Status
-            </a>
-            <a href="/roadmap" className="transition hover:text-white">
-              Roadmap
-            </a>
-          </nav>
-        </header>
-
+        <SiteHeader />
         <section className="grid gap-12 lg:grid-cols-[1.1fr_0.9fr]">
           <div>
             <section id="hero" className="mb-24 scroll-mt-24">
